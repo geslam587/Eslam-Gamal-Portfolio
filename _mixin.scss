@@ -1,0 +1,24 @@
+
+
+body{
+    background-color: black;
+}
+@mixin FlexRwo( $x,$y){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: $x;
+    // justify-content: space-between;
+    align-items: $y;
+}
+@mixin FlexColumn($x, $y){
+    display: flex;
+    flex-direction: column;
+    justify-content: $y;
+    align-items: $x;
+}
+
+@mixin Hover{
+    cursor: pointer;
+    user-select: none;
+}

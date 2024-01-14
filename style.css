@@ -1,4 +1,173 @@
 body {
+  background-color: black;
+}
+
+body {
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+body {
+  background-color: black;
+}
+
+.nav {
+  font-family: sans-serif;
+  width: 100%;
+  max-width: 1440px;
+  height: 82px;
+  flex-shrink: 0;
+  background: #222;
+  box-shadow: 0px 4.364px 16px -2.182px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.nav .logo {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.nav .parent {
+  width: 40px;
+  height: 40%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+}
+.nav .parent .onphone {
+  width: 40px;
+  height: 2px;
+}
+.nav .parent .onphone:before {
+  content: "";
+  background-color: #181818;
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  width: 30px;
+  height: 2px;
+}
+.nav .parent .onphone:after {
+  content: "";
+  background-color: #181818;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 30px;
+  height: 2px;
+}
+.nav .phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  background-color: #fff;
+  color: #181818;
+  border-radius: 10px;
+  top: 80px;
+  right: 10px;
+}
+.nav .phone p {
+  position: relative;
+  font-size: 18px;
+}
+.nav .phone p:hover {
+  cursor: pointer;
+}
+.nav .phone p:hover:before {
+  content: "";
+  background-color: #181818;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+.nav .desktop {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav .desktop p {
+  margin-left: 40px;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.nav .desktop p:hover:before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+.nav .them {
+  width: 90px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 60px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+}
+.nav .them .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 2.5px;
+  transform: translate(0, -50%);
+  background-color: blue;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.nav .them .dark {
+  right: 2.5px;
+  background-color: #fff;
+}
+.nav .them .light {
+  left: 2.5px;
+  background-color: #222;
 }/*# sourceMappingURL=style.css.map */
