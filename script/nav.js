@@ -1,22 +1,45 @@
 export default function nav() {
     document.body.querySelector(".circle").addEventListener('click',them)
+    let hometitle = document.querySelector('.home').children[1].classList
+    let homep = document.querySelector('.home').children[2].classList
+    let homebutton1 = document.querySelector('.home').children[3].children[0].classList
+    let homebutton2 = document.querySelector('.home').children[3].children[1].classList
+    console.log(homebutton1);
+    console.log(homebutton2);
+
     function them() {
-        let div =document.body.querySelector(".circle").classList
-            if (div.contains("dark")) {
-                div.add('light')
-                div.remove('dark')
+        let nav =document.body.querySelector(".circle").classList
+            if (nav.contains("dark")) {
+                nav.add('light')
+                nav.remove('dark')
+                hometitle.add('titleDark')
+                homep.add('pDark')
+                homebutton1.add('buttonDark')
+                homebutton2.add('buttonDark')
+                hometitle.remove('titleLight')
+                homep.remove('pLight')
+                homebutton1.remove('buttonLight')
+                homebutton2.remove('buttonLight')
                 document.body.querySelector('.them').style.backgroundColor= '#fff'
                 document.body.querySelector('.nav').style.backgroundColor= '#222'
                 document.body.querySelector('.nav').style.color= '#fff'
                 document.body.style.backgroundColor= '#222'
             }
             else{
-                div.add('dark')
-                div.remove('light')
+                nav.add('dark')
+                nav.remove('light')
+                hometitle.add('titleLight')
+                homep.add('pLight')
+                homebutton1.add('buttonLight')
+                homebutton2.add('buttonLight')
+                hometitle.remove('titleDark')
+                homep.remove('pDark')
+                homebutton1.remove('buttonDark')
+                homebutton2.remove('buttonDark')
                 document.body.querySelector('.them').style.backgroundColor= '#222'
-                document.body.querySelector('.nav').style.backgroundColor= '#fff'
+                document.body.querySelector('.nav').style.backgroundColor= '#ECF1F0'
                 document.body.querySelector('.nav').style.color= '#222'
-                document.body.style.backgroundColor= '#eee'
+                document.body.style.backgroundColor= '#ECF1F0'
             }
     }
     function open() {
@@ -38,7 +61,6 @@ export default function nav() {
     }
     else if( window.innerWidth >= 850) {
         // document.querySelector('.phone').style.display= "none"
-        console.log(34);
         document.querySelector('#center').classList.remove('phone')        
         document.querySelector('.parent').style.display = "none"
         // document.querySelector('.parent').removeEventListener('click',open)

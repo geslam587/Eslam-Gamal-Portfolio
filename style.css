@@ -1,18 +1,22 @@
 body {
-  background-color: black;
+  background-color: #222;
 }
 
 body {
   padding: 0;
   margin: 0;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 body {
-  background-color: black;
+  background-color: #222;
 }
 
 .nav {
@@ -29,7 +33,9 @@ body {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .nav .logo {
   position: absolute;
@@ -140,8 +146,8 @@ body {
   height: 2px;
 }
 .nav .them {
-  width: 90px;
-  height: 45px;
+  width: 50px;
+  height: 25px;
   background-color: #fff;
   border-radius: 60px;
   position: absolute;
@@ -150,14 +156,12 @@ body {
   transform: translate(0, -50%);
 }
 .nav .them .circle {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   position: absolute;
-  top: 50%;
+  top: 2.5px;
   right: 2.5px;
-  transform: translate(0, -50%);
-  background-color: blue;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -170,4 +174,122 @@ body {
 .nav .them .light {
   left: 2.5px;
   background-color: #222;
+}
+
+body {
+  background-color: #222;
+}
+
+.home {
+  font-family: sans-serif;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+.home img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #222;
+}
+.home .titleDark {
+  width: 650px;
+  color: var(--Primary-Color, #FFF);
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 63.357px;
+  background: var(--Primary-Gradient, linear-gradient(116deg, #FF8660 71.79%, #9A33FF 95.51%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 63.357px;
+}
+.home .pDark {
+  width: 650px;
+  color: var(--Secondary-Text, #C5C5C5);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+.home .buttonDark {
+  width: 204px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: black;
+  color: #fff;
+  border: 2px solid var(--Primary-Color, #FFF);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 10px;
+}
+.home .buttonDark:hover {
+  background: var(--Primary-Gradient, linear-gradient(116deg, #FF8660 71.79%, #9A33FF 95.51%));
+  color: #181818;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.home .titleLight {
+  width: 650px;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 63.357px;
+  background: var(--TEXT-CLR, #202531);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 63.357px;
+}
+.home .pLight {
+  width: 650px;
+  color: var(--TEXT-CLR, #202531);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+.home .buttonLight {
+  width: 204px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: var(--TEXT-CLR, rgba(32, 37, 49, 0.8823529412));
+  color: #fff;
+  border: 2px solid var(--Primary-Color, #FFF);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 10px;
+}
+.home .buttonLight:hover {
+  background: var(--Primary-Gradient, linear-gradient(116deg, #FF8660 71.79%, #9A33FF 95.51%));
+  color: #181818;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }/*# sourceMappingURL=style.css.map */
