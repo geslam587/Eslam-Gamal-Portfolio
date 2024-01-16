@@ -20,10 +20,13 @@ export default function nav() {
                 homep.remove('pLight')
                 homebutton1.remove('buttonLight')
                 homebutton2.remove('buttonLight')
+                document.querySelector('.experience').classList.add('exDark')
+                document.querySelector('.experience').classList.remove('exLight')
                 document.body.querySelector('.them').style.backgroundColor= '#fff'
                 document.body.querySelector('.nav').style.backgroundColor= '#222'
                 document.body.querySelector('.nav').style.color= '#fff'
                 document.body.style.backgroundColor= '#222'
+                // document.body.style.color= '#fff'
             }
             else{
                 nav.add('dark')
@@ -36,6 +39,9 @@ export default function nav() {
                 homep.remove('pDark')
                 homebutton1.remove('buttonDark')
                 homebutton2.remove('buttonDark')
+                
+                document.querySelector('.experience').classList.add('exLight')
+                document.querySelector('.experience').classList.remove('exDark')
                 document.body.querySelector('.them').style.backgroundColor= '#222'
                 document.body.querySelector('.nav').style.backgroundColor= '#ECF1F0'
                 document.body.querySelector('.nav').style.color= '#222'
@@ -57,10 +63,10 @@ export default function nav() {
         document.querySelector('.parent').style.display = "flex"
         document.querySelector('.parent').addEventListener('click',open)
         document.querySelector('.them').style.display = "none"
+        document.querySelector('.phone').style.display= "none"
         
     }
     else if( window.innerWidth >= 850) {
-        // document.querySelector('.phone').style.display= "none"
         document.querySelector('#center').classList.remove('phone')        
         document.querySelector('.parent').style.display = "none"
         // document.querySelector('.parent').removeEventListener('click',open)
@@ -70,6 +76,6 @@ export default function nav() {
         
     };
 }
-document.body.onload = resize
+document.body.onload = resize 
 document.body.onresize = resize
 }

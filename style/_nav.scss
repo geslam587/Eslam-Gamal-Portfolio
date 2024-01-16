@@ -13,12 +13,13 @@
     @include FlexRwo(space-between, center);
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 100;
     .logo{
         position: absolute;
         top: 50%;
-        left: 20%;
-        transform: translateY(-50%);
+        left: 15%;
         position: absolute;
         top: 50%;
         left: 20%;

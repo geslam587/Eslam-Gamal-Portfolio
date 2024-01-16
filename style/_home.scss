@@ -14,14 +14,13 @@
     }
     .titleDark{
         width: 650px;
+        max-width: 70%;
         color: var(--Primary-Color, #FFF);
         text-align: center;
-        font-size: 32px;
         font-style: normal;
         font-weight: 600;
         line-height: 63.357px; 
         background: var(--Primary-Gradient, linear-gradient(116deg, #FF8660 71.79%, #9A33FF 95.51%));
-        // background:  var(--TEXT-CLR, #5E6282);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -32,6 +31,7 @@
     }
     .pDark{
         width: 650px;
+        max-width: 70%;
         color: var(--Secondary-Text, #C5C5C5);
         text-align: center;
         font-size: 18px;
@@ -40,7 +40,11 @@
         line-height: normal;
         letter-spacing: 0.36px;
     }
-
+    .buttons{
+        width: 100%;
+        @include FlexRwo(center, center);
+        flex-wrap: wrap;
+    }
     .buttonDark{
         width: 204px;
         height: 64px;
@@ -63,6 +67,7 @@
     }
     .titleLight{
         width: 650px;
+        max-width: 70%;
         text-align: center;
         font-size: 32px;
         font-style: normal;
@@ -79,6 +84,7 @@
     }
     .pLight{
         width: 650px;
+        max-width: 70%;
         color:  var(--TEXT-CLR, #202531);
         text-align: center;
         font-size: 18px;

@@ -1,11 +1,8 @@
 body {
   background-color: #222;
-}
-
-body {
   padding: 0;
   margin: 0;
-  color: #fff;
+  color: #C5C5C5;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -13,10 +10,6 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-}
-
-body {
-  background-color: #222;
 }
 
 .nav {
@@ -35,13 +28,14 @@ body {
   align-items: center;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 100;
 }
 .nav .logo {
   position: absolute;
   top: 50%;
-  left: 20%;
-  transform: translateY(-50%);
+  left: 15%;
   position: absolute;
   top: 50%;
   left: 20%;
@@ -176,10 +170,6 @@ body {
   background-color: #222;
 }
 
-body {
-  background-color: #222;
-}
-
 .home {
   font-family: sans-serif;
   width: 100%;
@@ -198,9 +188,9 @@ body {
 }
 .home .titleDark {
   width: 650px;
+  max-width: 70%;
   color: var(--Primary-Color, #FFF);
   text-align: center;
-  font-size: 32px;
   font-style: normal;
   font-weight: 600;
   line-height: 63.357px;
@@ -215,6 +205,7 @@ body {
 }
 .home .pDark {
   width: 650px;
+  max-width: 70%;
   color: var(--Secondary-Text, #C5C5C5);
   text-align: center;
   font-size: 18px;
@@ -222,6 +213,15 @@ body {
   font-weight: 300;
   line-height: normal;
   letter-spacing: 0.36px;
+}
+.home .buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .home .buttonDark {
   width: 204px;
@@ -247,6 +247,7 @@ body {
 }
 .home .titleLight {
   width: 650px;
+  max-width: 70%;
   text-align: center;
   font-size: 32px;
   font-style: normal;
@@ -263,6 +264,7 @@ body {
 }
 .home .pLight {
   width: 650px;
+  max-width: 70%;
   color: var(--TEXT-CLR, #202531);
   text-align: center;
   font-size: 18px;
@@ -292,4 +294,198 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.exDark {
+  width: 100%;
+  padding: 30px 0;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+.exDark h3 {
+  color: var(--Secondary-Text, #C5C5C5);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  margin-bottom: 40px;
+}
+.exDark .eximg {
+  background-color: #222;
+  width: 600px;
+  max-width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.exDark .eximg .html {
+  position: relative;
+}
+.exDark .eximg .html:hover:before {
+  content: "HTML";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+}
+.exDark .eximg .css {
+  position: relative;
+}
+.exDark .eximg .css:hover:before {
+  content: "CSS";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+}
+.exDark .eximg .javascript {
+  position: relative;
+}
+.exDark .eximg .javascript:hover:before {
+  content: "javascript";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+}
+.exDark .eximg .raectjs {
+  position: relative;
+}
+.exDark .eximg .raectjs:hover:before {
+  content: "Reactjs";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+}
+.exDark .eximg img {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 10px 30px;
+  color: black;
+}
+.exDark .eximg img:hover {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.exLight {
+  width: 100%;
+  padding: 30px 0;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+.exLight h3 {
+  color: var(--Secondary-Text, #222);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  margin-bottom: 40px;
+}
+.exLight .eximg {
+  background-color: #222;
+  width: 600px;
+  max-width: 90%;
+  height: 70px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.exLight .eximg .html {
+  position: relative;
+}
+.exLight .eximg .html:hover:before {
+  content: "HTML";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #222;
+  font-size: 14px;
+}
+.exLight .eximg .css {
+  position: relative;
+}
+.exLight .eximg .css:hover:before {
+  content: "CSS";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #222;
+  font-size: 14px;
+}
+.exLight .eximg .javascript {
+  position: relative;
+}
+.exLight .eximg .javascript:hover:before {
+  content: "javascript";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #222;
+  font-size: 14px;
+}
+.exLight .eximg .raectjs {
+  position: relative;
+}
+.exLight .eximg .raectjs:hover:before {
+  content: "Reactjs";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #222;
+  font-size: 14px;
+}
+.exLight .eximg img {
+  width: 40px;
+  height: 40px;
+  margin: 10px 30px;
+  color: black;
+}
+.exLight .eximg img:hover {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.projects {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

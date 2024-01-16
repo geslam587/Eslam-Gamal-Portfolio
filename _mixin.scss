@@ -1,8 +1,6 @@
 
 
-body{
-    background-color: #222;
-}
+
 @mixin FlexRwo( $x,$y){
     display: flex;
     flex-direction: row;

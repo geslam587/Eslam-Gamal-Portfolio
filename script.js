@@ -1,4 +1,7 @@
 console.log("welcom");
+
+
+
 import nav from"./script/nav.js"
 import home from"./script/home.js"
 import experience from"./script/experience.js"
