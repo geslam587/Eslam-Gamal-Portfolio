@@ -4,8 +4,6 @@ export default function nav() {
     let homep = document.querySelector('.home').children[2].classList
     let homebutton1 = document.querySelector('.home').children[3].children[0].classList
     let homebutton2 = document.querySelector('.home').children[3].children[1].classList
-    console.log(homebutton1);
-    console.log(homebutton2);
 
     function them() {
         let nav =document.body.querySelector(".circle").classList

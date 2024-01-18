@@ -1,4 +1,155 @@
 .projects{
-    width: 100%;
-    
+    width: calc(100% - 60px);    
+    max-width: 1440px;
+    height: auto;
+    padding: 20px 40px 20px 40px;
+    box-sizing: border-box;
+    background-color: #ffffff30;
+    margin: 30px;
+    border-radius: 7px;
+    #title {
+        width: 180px;
+        font-size: 38px;
+        border-bottom: 2px solid #181818;
+        text-align: center;
+        margin: 30px auto;
+        color: black;
+    }
+
+    #nav{
+        width: 100%;
+        min-height: 40px;
+        background-color: #eee;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        button{
+            width: auto;
+            height: 100%;
+            font-size: 16px;
+            padding: 0 10px ;
+            // background-color: #222;
+            // color: #fff;
+            border: 0;
+            margin: 0 5px ;
+            height: 30px;
+            border-radius: 7px;
+            position: relative;
+            cursor: pointer;
+            &:hover{
+                &:before{width: 100%;}
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                bottom: 4px;
+                left: 0;
+                width: 0;
+                height: 3px;
+                border-radius: 2px;
+                background-color:#181818;
+                transition: all .4s;   
+            }
+        }
+        .activ{
+           &:before{
+                font-weight: bolder;
+                width: 100%;
+                }
+        }
+    }
+    #cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+    #cards .project{
+        width: 250px;
+        height: 300px;
+        background-color: #fff;
+        border-radius: 9px;
+        text-align: center;
+        box-shadow: 0 3px  13px 0 rgba(0, 0, 0, 0.2);
+        margin: 20px;
+        position: relative;
+        
+        animation-name: start;
+        animation-duration: .4s;
+    }
+    #cards .project img{
+        width: calc(100% - 10px);
+        height: 145px;
+        border-radius: 6px;
+        margin: 5px;
+    }
+    #cards .project h2{
+        font-size: 22px;
+        font-family: sans-serif;
+        margin-bottom: 5px;
+        margin-top: 12px;
+        color: #181818;
+    }
+    #cards .project p{
+    color: #181818;
+    width: 90%;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 0 20px ;
+    overflow: hidden;
+    text-align: center;
+    font-family: sans-serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    }
+    #cards .project button{
+        width: 70%;
+        height: 40px;
+        color: white;
+        background-color: #181818;
+        border-radius: 40px;
+        border: 0;
+        font-size: 17px;
+        margin-top: 10px;
+        text-align: center;
+        cursor: pointer;
+        transition: all .04s;
+        // display: inline;
+    }
+
+     #cards .project button:hover {
+        background-color: white;
+        color: #181818;
+        box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.2);
+    }
+
+
+
+    @keyframes start{
+        0%{
+            width: 0px;
+            height: 0px;
+            opacity: 1;
+        }
+        /* 50%{
+            width: 200PX;
+            height: 200PX;
+            opacity: .5;
+            
+        } */
+        100%{
+            width: 250px;
+            height: 300px;
+            opacity: .1;
+        }
+    }
+
+
 }
