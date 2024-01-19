@@ -1,1 +1,43 @@
 
+
+.skills{
+    background-color: #22222284;
+    border-radius: 10px;
+    @include FlexColumn(center , center);
+    .title{
+            // font-size: 32px;
+            width: 150px;
+            font-size: 38px;
+            border-bottom: 2px solid #C5C5C5;
+            color: #C5C5C5;
+            text-align: center;
+    }
+    .tolls {
+        position: relative;
+        margin-top: 30px;
+        @include FlexRwo(center, center);
+        flex-wrap: wrap;
+        color: #C5C5C5;
+        padding: 50px;
+        // border-radius: 10px;
+        // background-color: #22222284;
+    
+        .skill {
+            width: 100px;
+            position: relative;
+            transition: all .3s;
+            font-size: 10px;
+            background-color: #151515a3;
+            color: #C5C5C5;
+            padding: 2px;
+            height: 55px;
+            margin: 8px;
+            border-radius: 10px;
+            @include FlexColumn(center , center);
+            animation: about_height__0gwPN 2s ease;
+            @include Hover;
+        }
+    }
+    
+}
+ 
