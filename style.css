@@ -131,14 +131,55 @@ body {
      -moz-user-select: none;
           user-select: none;
 }
-.nav .desktop p:hover:before {
+.nav .desktop p:before {
   content: "";
   background-color: #fff;
   position: absolute;
   bottom: -2px;
   left: 0;
-  width: 100%;
+  width: 0;
   height: 2px;
+  transition: all 0.4s;
+}
+.nav .desktop p:hover:before {
+  width: 100%;
+}
+.nav .desktop .activ:before {
+  width: 100%;
+}
+.nav .desktoplight {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav .desktoplight p {
+  color: black;
+  margin-left: 40px;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.nav .desktoplight p:before {
+  content: "";
+  background-color: #222;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.4s;
+}
+.nav .desktoplight p:hover:before {
+  width: 100%;
 }
 .nav .them {
   width: 50px;
@@ -190,15 +231,11 @@ body {
 .home .titleDark {
   width: 650px;
   max-width: 70%;
-  color: var(--Primary-Color, #FFF);
+  color: #C5C5C5;
   text-align: center;
   font-style: normal;
   font-weight: 600;
   line-height: 63.357px;
-  background: var(--Primary-Gradient, linear-gradient(116deg, #FF8660 71.79%, #9A33FF 95.51%));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 32px;
   font-style: normal;
   font-weight: 600;

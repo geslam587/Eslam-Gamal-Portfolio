@@ -6,6 +6,9 @@ body{
     color: #C5C5C5;
     @include FlexColumn(center, flex-start);
     user-select: none;
+    // position: relative;
+    // transition: all .4s;   
+    
     scroll-behavior: smooth
 }
 @import'./style/nav';

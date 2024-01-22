@@ -23,6 +23,7 @@ export default function nav() {
                 document.body.querySelector('.them').style.backgroundColor= '#fff'
                 document.body.querySelector('.nav').style.backgroundColor= '#222'
                 document.body.querySelector('.nav').style.color= '#fff'
+                document.body.querySelector('.desktop').classList.remove("desktoplight")
                 document.body.style.backgroundColor= '#222'
                 // document.body.style.color= '#fff'
             }
@@ -43,6 +44,7 @@ export default function nav() {
                 document.body.querySelector('.them').style.backgroundColor= '#222'
                 document.body.querySelector('.nav').style.backgroundColor= '#ECF1F0'
                 document.body.querySelector('.nav').style.color= '#222'
+                document.body.querySelector('.desktop').classList.add("desktoplight")
                 document.body.style.backgroundColor= '#ECF1F0'
             }
     }

@@ -52,7 +52,6 @@ export default function appendCards(activpart) {
             
             let button =document.createElement("button")
             button.addEventListener("click", () => { 
-              // window.location.href = x.vew
               window.open(x.vew)
             })
             button.innerHTML= "View Project"
