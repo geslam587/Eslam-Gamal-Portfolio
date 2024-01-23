@@ -227,6 +227,10 @@ body {
   height: 200px;
   border-radius: 50%;
   background-color: #222;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 .home .titleDark {
   width: 650px;
@@ -722,7 +726,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 400px;
+  margin-bottom: 100px;
   scroll-behavior: smooth;
 }
 .contact .title {
@@ -762,7 +766,7 @@ body {
   border: 0;
   border-bottom: 2px solid #C5C5C5;
 }
-.contact .bottom .left button {
+.contact .bottom .left .send {
   width: 100%;
   height: 40px;
   background-color: #3e3e3e;
@@ -776,7 +780,21 @@ body {
      -moz-user-select: none;
           user-select: none;
 }
-.contact .right {
+.contact .bottom .left .reset {
+  width: 100%;
+  height: 40px;
+  background-color: #3e3e3e;
+  border: 0;
+  color: #C5C5C5;
+  font-size: 18px;
+  margin-top: 40px;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.contact .bottom .right {
   width: 500px;
   background-color: #3e3e3e;
   height: 400px;
@@ -784,18 +802,117 @@ body {
   top: 40px;
   margin-bottom: 30px;
 }
-.contact .right h3 {
+.contact .bottom .right h3 {
   font-size: 32px;
   color: #fff;
+  margin-left: 10px;
+}
+.contact .bottom .right div {
+  margin: 40px 0;
+  font-size: 20px;
+  color: #fff;
+}
+.contact .bottom .right div a {
+  color: #fff;
+}
+.contact .bottom .right div ion-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: relative;
+  top: 7px;
+}
+.contact .titleLight {
+  width: 150px;
+  font-size: 38px;
+  border-bottom: 2px solid #222;
+  color: #222;
+  text-align: center;
+}
+.contact .bottomlight {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.contact .bottomlight .left {
+  width: 500px;
+  height: auto;
+}
+.contact .bottomlight .left h3 {
+  color: #222;
+  font-size: 32px;
+  color: 222;
+}
+.contact .bottomlight .left p {
+  width: 300px;
+  color: #222;
+}
+.contact .bottomlight .left input {
+  display: block;
+  background-color: #C5C5C5;
+  width: 100%;
+  height: 55px;
+  color: #222;
+  font-size: 20px;
+  border: 0;
+  border-bottom: 2px solid #222;
+}
+.contact .bottomlight .left .send {
+  width: 100%;
+  height: 40px;
+  background-color: #C5C5C5;
+  border: 0;
+  color: #222;
+  font-size: 18px;
+  margin-top: 40px;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.contact .bottomlight .left .reset {
+  width: 100%;
+  height: 40px;
+  background-color: #C5C5C5;
+  border: 0;
+  color: #222;
+  font-size: 18px;
+  margin-top: 40px;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.contact .right {
+  width: 500px;
+  background-color: #C5C5C5;
+  height: 400px;
+  position: relative;
+  top: 40px;
+  margin-bottom: 30px;
+}
+.contact .right h3 {
+  font-size: 32px;
+  color: #222;
   margin-left: 10px;
 }
 .contact .right div {
   margin: 40px 0;
   font-size: 20px;
-  color: #fff;
+  color: #222;
 }
 .contact .right div a {
-  color: #fff;
+  color: #222;
 }
 .contact .right div ion-icon {
   width: 30px;

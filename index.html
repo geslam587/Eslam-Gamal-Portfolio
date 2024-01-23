@@ -36,7 +36,7 @@
             I am a seasoned front-end developer with professional experience, specializing in front-end development. My expertise lies in crafting a Creative, responsive, robust, and scalable website
         </p>
         <div class="buttons">
-            <button class="buttonDark" onclick="scrollCon()" > Hire Me</button>
+            <button class="buttonDark"> Hire Me</button>
             <button class="buttonDark" onclick="window.open('https://drive.google.com/file/d/1zZLwv_MHeiCplp7WnXRmRqYY9wJAJt2n/view?usp=drivesdk')">Download CV</button>
         </div>
     </div>
@@ -97,8 +97,8 @@
         </div>
     </div>
     <div id="contact" class="contact">
-        <h2 class="title">Contact</h2>
-        <div class="bottom">
+        <h2 id="conTitle" class="title ">Contact</h2>
+        <div id="conBottom" class="bottom ">
             <div class="right">
                 <h3>Info</h3>
                 <div class="email">
@@ -125,12 +125,15 @@
             <div class="left">
                 <h3> Contact with me</h3>
                 <p>Feel Free To Contact with me any time, I will get back to you as soon as we can!</p>
-                <!-- <div class="input"></div> -->
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="number" placeholder="Phone Number">
-                <input type="text" placeholder="Your message">
-                <button> S E N D</button>
+                <form action="mailto:geslam587@gmail.com"  method="post" enctype="text/plain">
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="email" placeholder="Email" name="email">
+                    <input type="number" placeholder="Phone Number" name="phone Number">
+                    <input type="text" placeholder="Your message" name="message">
+                    <input type="submit" value="Send" class="send">
+                    <input type="reset" value="Reset" class="reset">
+                </form>
+
             </div>
         </div>
     </div>

@@ -4,6 +4,8 @@ export default function nav() {
     let homep = document.querySelector('.home').children[2].classList
     let homebutton1 = document.querySelector('.home').children[3].children[0].classList
     let homebutton2 = document.querySelector('.home').children[3].children[1].classList
+    let conTitle = document.querySelector('#conTitle').classList
+    let conBottom = document.querySelector('#conBottom').classList
 
     function them() {
         let nav =document.body.querySelector(".circle").classList
@@ -11,13 +13,19 @@ export default function nav() {
                 nav.add('light')
                 nav.remove('dark')
                 hometitle.add('titleDark')
-                homep.add('pDark')
-                homebutton1.add('buttonDark')
-                homebutton2.add('buttonDark')
                 hometitle.remove('titleLight')
+                homep.add('pDark')
                 homep.remove('pLight')
+                homebutton1.add('buttonDark')
                 homebutton1.remove('buttonLight')
+                homebutton2.add('buttonDark')
                 homebutton2.remove('buttonLight')
+                
+                conTitle.remove('titleLight')
+                conTitle.add('title')
+                conBottom.remove('bottomlight')
+                conBottom.add('bottom')
+
                 document.querySelector('.experience').classList.add('exDark')
                 document.querySelector('.experience').classList.remove('exLight')
                 document.body.querySelector('.them').style.backgroundColor= '#fff'
@@ -38,6 +46,11 @@ export default function nav() {
                 homep.remove('pDark')
                 homebutton1.remove('buttonDark')
                 homebutton2.remove('buttonDark')
+                
+                conTitle.add('titleLight')
+                conTitle.remove('title')
+                conBottom.add('bottomlight')
+                conBottom.remove('bottom')
                 
                 document.querySelector('.experience').classList.add('exLight')
                 document.querySelector('.experience').classList.remove('exDark')

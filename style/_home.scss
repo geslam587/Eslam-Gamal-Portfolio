@@ -11,6 +11,9 @@
         height: 200px;
         border-radius: 50%;
         background-color: #222;
+        // filter: grayscale(100%);
+        object-fit: cover;
+        object-position: top;
     }
     .titleDark{
         width: 650px;
