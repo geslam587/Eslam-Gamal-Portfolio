@@ -8,12 +8,12 @@ let Projects = [
     {parts: ["All","Web Design", "SASS"], img: "5.png", title: "Project SASS", text: "Built like a design from Figma using SASS " ,vew : "https://geslam587.github.io/project_sass/"},
     {parts: ["All","HTML CSS"], img: "8.png", title: "Activ Pricing", text: "Built and activated without js " ,vew : "https://geslam587.github.io/webket-training/Active-Pricing/"},
     {parts: ["All","HTML & CSS & JS"], img: "9.png", title: "CHoose a user", text: "You can select or delete users " ,vew : "https://geslam587.github.io/webket-training/Choose%20A%20User/"},
-    {parts: ["All","HTML & CSS & JS"], img: "10.png", title: "Countries toggle", text: "Construction is done based on the choice of the country " ,vew : "https://geslam587.github.io/Countries-Toggle/"},
-    {parts: ["All","HTML & CSS & JS"], img: "11.png", title: "Hover move", text: "simple effect in css using js " ,vew : "https://geslam587.github.io/webket-training/Hover-move/"},
-    {parts: ["All","HTML & CSS & JS"], img: "12.png", title: "snapping duble click", text: "simple effect using function on scroll " ,vew : "https://geslam587.github.io/webket-training/Snapping&bubleClikc/"},
-    {parts: ["All","HTML CSS"], img: "13.png", title: "Open img", text: "Built and activated without js " ,vew : "https://geslam587.github.io/webket-training/Open%20imge/"},
-    {parts: ["All","API"], img: "14.png", title: "Quiz app", text: "Built using fetch API " ,vew : "https://geslam587.github.io/quiz-App/"},
-    {parts: ["All","API"], img: "15.png", title: "Filter search", text: "Built using fetch API  " ,vew : "https://geslam587.github.io/filter-search/"},
+    {parts: ["All","HTML & CSS & JS"], img: "Countries.PNG", title: "Countries toggle", text: "Construction is done based on the choice of the country " ,vew : "https://geslam587.github.io/Countries-Toggle/"},
+    {parts: ["All","HTML & CSS & JS"], img: "hover.PNG", title: "Hover move", text: "simple effect in css using js " ,vew : "https://geslam587.github.io/webket-training/Hover-move/"},
+    {parts: ["All","HTML & CSS & JS"], img: "snapping.PNG", title: "snapping duble click", text: "simple effect using function on scroll " ,vew : "https://geslam587.github.io/webket-training/Snapping&bubleClikc/"},
+    {parts: ["All","HTML CSS"], img: "Open.PNG", title: "Open img", text: "Built and activated without js " ,vew : "https://geslam587.github.io/webket-training/Open%20imge/"},
+    {parts: ["All","API"], img: "Quiz.PNG", title: "Quiz app", text: "Built using fetch API " ,vew : "https://geslam587.github.io/quiz-App/"},
+    {parts: ["All","API"], img: "search.PNG", title: "Filter search", text: "Built using fetch API  " ,vew : "https://geslam587.github.io/filter-search/"},
 ]
 
 export default function appendCards(activpart) {

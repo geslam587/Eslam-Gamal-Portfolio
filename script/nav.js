@@ -21,10 +21,10 @@ export default function nav() {
                 homebutton2.add('buttonDark')
                 homebutton2.remove('buttonLight')
                 
-                conTitle.remove('titleLight')
                 conTitle.add('title')
-                conBottom.remove('bottomlight')
+                conTitle.remove('titleLight')
                 conBottom.add('bottom')
+                conBottom.remove('bottomlight')
 
                 document.querySelector('.experience').classList.add('exDark')
                 document.querySelector('.experience').classList.remove('exLight')
@@ -39,12 +39,12 @@ export default function nav() {
                 nav.add('dark')
                 nav.remove('light')
                 hometitle.add('titleLight')
-                homep.add('pLight')
-                homebutton1.add('buttonLight')
-                homebutton2.add('buttonLight')
                 hometitle.remove('titleDark')
+                homep.add('pLight')
                 homep.remove('pDark')
+                homebutton1.add('buttonLight')
                 homebutton1.remove('buttonDark')
+                homebutton2.add('buttonLight')
                 homebutton2.remove('buttonDark')
                 
                 conTitle.add('titleLight')
@@ -73,6 +73,7 @@ export default function nav() {
         if (window.innerWidth <= 850) {
         document.querySelector('#center').classList.add('phone')
         document.querySelector('#center').classList.remove('desktop')
+        document.querySelector('#center').classList.remove('desktoplight')
         document.querySelector('.parent').style.display = "flex"
         document.querySelector('.parent').addEventListener('click',open)
         document.querySelector('.them').style.display = "none"
